@@ -43,7 +43,14 @@ public class CodeingPractice {
         System.out.println(anagrams(s1, s2));      
         System.out.println(anagrams(s1, s3));
 
-        //
+        //factorial
+        int n = 5;
+        System.out.println(fac(n));
+
+        //swaping
+        int a = 1;
+        int b = 2;
+        swap(a,b);
     }
     public static String reverse(String s){
         StringBuilder output = new StringBuilder();
@@ -150,6 +157,24 @@ public class CodeingPractice {
 
             }
             return true;
+        }
+
+        // Facorial
+        public static int fac(int n){
+            int res = 1;
+            for(int i = n; i>0; i--){
+                res = res * i;
+            }
+            return res;
+        }
+
+        //Swaping
+        public static void swap(int a , int b){
+            System.out.println("before Swap a = "+ a + " and b = "+ b);
+            int c = a;
+            a = b;
+            b = c;
+            System.out.println("After Swap a = "+ a + " and b = " + b); 
         }
 
     }
